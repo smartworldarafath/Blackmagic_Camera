@@ -1,0 +1,78 @@
+.class final Landroidx/compose/foundation/pager/PagerState$scroll$1;
+.super Lkotlin/coroutines/jvm/internal/ContinuationImpl;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lo61;
+    c = "androidx.compose.foundation.pager.PagerState"
+    f = "PagerState.kt"
+    l = {
+        0x2ba,
+        0x2bf
+    }
+    m = "scroll$suspendImpl"
+    v = 0x1
+.end annotation
+
+
+# instance fields
+.field public f:Landroidx/compose/foundation/pager/d;
+
+.field public i:Landroidx/compose/foundation/MutatePriority;
+
+.field public m:Lkotlin/coroutines/jvm/internal/SuspendLambda;
+
+.field public synthetic w:Ljava/lang/Object;
+
+.field public final synthetic x:Landroidx/compose/foundation/pager/d;
+
+.field public y:I
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/foundation/pager/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerState$scroll$1;->x:Landroidx/compose/foundation/pager/d;
+
+    invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lt11;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iput-object p1, p0, Landroidx/compose/foundation/pager/PagerState$scroll$1;->w:Ljava/lang/Object;
+
+    iget p1, p0, Landroidx/compose/foundation/pager/PagerState$scroll$1;->y:I
+
+    const/high16 v0, -0x80000000
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Landroidx/compose/foundation/pager/PagerState$scroll$1;->y:I
+
+    iget-object p1, p0, Landroidx/compose/foundation/pager/PagerState$scroll$1;->x:Landroidx/compose/foundation/pager/d;
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0, v0, p0}, Landroidx/compose/foundation/pager/d;->q(Landroidx/compose/foundation/pager/d;Landroidx/compose/foundation/MutatePriority;Lqd2;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method

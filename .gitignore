@@ -1,0 +1,23 @@
+# Build and compilation outputs
+build/
+dist/
+*.apk
+*.idsig
+
+# Android Studio & IDE
+.idea/
+.gradle/
+*.iml
+local.properties
+.DS_Store
+Thumbs.db
+
+# Security & Secrets protection
+.env
+.env.*
+*.keystore
+*.jks
+*.key
+*.p12
+credentials.json
+google-services.json

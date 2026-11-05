@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cameras">
+        <item quantity="one">%d Camera</item>
+        <item quantity="other">%d Cameras</item>
+    </plurals>
+    <plurals name="delete_clip_message">
+        <item quantity="one">"This clip will be permanently
+deleted from your phone."</item>
+        <item quantity="other">"These clips will be permanently
+deleted from your phone."</item>
+    </plurals>
+    <plurals name="delete_n_clips">
+        <item quantity="one">Delete Clip?</item>
+        <item quantity="other">Delete %d Clips?</item>
+    </plurals>
+    <plurals name="delete_proxy_only">
+        <item quantity="one">Delete Proxy Only</item>
+        <item quantity="other">Delete Proxies Only</item>
+    </plurals>
+    <plurals name="n_clips_synced">
+        <item quantity="one">%d Clip Synced</item>
+        <item quantity="other">%d Clips Synced</item>
+    </plurals>
+    <plurals name="num_clips">
+        <item quantity="one">%d Clip</item>
+        <item quantity="other">%d Clips</item>
+    </plurals>
+    <plurals name="num_members">
+        <item quantity="one">%d Member</item>
+        <item quantity="other">%d Members</item>
+    </plurals>
+    <plurals name="remove_clip_message">
+        <item quantity="one">"This clip will be permanently
+removed from the Media Pool."</item>
+        <item quantity="other">"These clips will be permanently
+removed from the Media Pool."</item>
+    </plurals>
+    <plurals name="remove_n_clips">
+        <item quantity="one">Remove Clip?</item>
+        <item quantity="other">Remove %d Clips?</item>
+    </plurals>
+    <plurals name="remove_proxy_only">
+        <item quantity="one">Remove Proxy Only</item>
+        <item quantity="other">Remove Proxies Only</item>
+    </plurals>
+    <plurals name="syncing_n_clips">
+        <item quantity="one">Syncing %d Clip</item>
+        <item quantity="other">Syncing %d Clips</item>
+    </plurals>
+    <plurals name="x_selected">
+        <item quantity="one">%d Selected</item>
+        <item quantity="other">%d Selected</item>
+    </plurals>
+</resources>

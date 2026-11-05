@@ -1,0 +1,64 @@
+.class public final Lno4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:Landroidx/compose/foundation/MutatePriority;
+
+.field public final b:Lj83;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/foundation/MutatePriority;Lj83;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lno4;->a:Landroidx/compose/foundation/MutatePriority;
+
+    iput-object p2, p0, Lno4;->b:Lj83;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lno4;)Z
+    .locals 0
+
+    iget-object p0, p0, Lno4;->a:Landroidx/compose/foundation/MutatePriority;
+
+    iget-object p1, p1, Lno4;->a:Landroidx/compose/foundation/MutatePriority;
+
+    invoke-virtual {p0, p1}, Ljava/lang/Enum;->compareTo(Ljava/lang/Enum;)I
+
+    move-result p0
+
+    if-ltz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final b()V
+    .locals 2
+
+    new-instance v0, Landroidx/compose/foundation/MutationInterruptedException;
+
+    const-string v1, "Mutation interrupted"
+
+    invoke-direct {v0, v1}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
+
+    iget-object p0, p0, Lno4;->b:Lj83;
+
+    invoke-interface {p0, v0}, Lj83;->cancel(Ljava/util/concurrent/CancellationException;)V
+
+    return-void
+.end method

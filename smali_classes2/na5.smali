@@ -1,0 +1,105 @@
+.class public final Lna5;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:Lma5;
+
+.field public b:Ltz1;
+
+.field public c:I
+
+.field public d:Ljava/lang/Object;
+
+.field public e:Landroid/os/Looper;
+
+.field public f:Z
+
+
+# virtual methods
+.method public final declared-synchronized a(Z)V
+    .locals 0
+
+    monitor-enter p0
+
+    :try_start_0
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+.end method
+
+.method public final b()V
+    .locals 2
+
+    iget-boolean v0, p0, Lna5;->f:Z
+
+    const/4 v1, 0x1
+
+    xor-int/2addr v0, v1
+
+    invoke-static {v0}, Lg05;->w(Z)V
+
+    iput-boolean v1, p0, Lna5;->f:Z
+
+    iget-object v0, p0, Lna5;->b:Ltz1;
+
+    iget-boolean v1, v0, Ltz1;->c0:Z
+
+    if-nez v1, :cond_1
+
+    iget-object v1, v0, Ltz1;->B:Landroid/os/Looper;
+
+    invoke-virtual {v1}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Thread;->isAlive()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, v0, Ltz1;->z:Lbx6;
+
+    const/16 v1, 0xe
+
+    invoke-virtual {v0, v1, p0}, Lbx6;->b(ILjava/lang/Object;)Lax6;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lax6;->b()V
+
+    return-void
+
+    :cond_1
+    :goto_0
+    const-string v0, "ExoPlayerImplInternal"
+
+    const-string v1, "Ignoring messages sent after release."
+
+    invoke-static {v0, v1}, Lzi2;->x0(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Lna5;->a(Z)V
+
+    return-void
+.end method
