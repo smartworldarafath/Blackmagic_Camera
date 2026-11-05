@@ -2,7 +2,7 @@
 
 <img src="app_icon.png" alt="Blackmagic Camera Icon" width="128" height="128" style="border-radius: 28px;" />
 
-# Blackmagic Camera for Android (Fully Opensourced)
+# Blackmagic Camera (Fully Opensourced)
 
 [![Platform](https://img.shields.io/badge/Platform-Android_13+-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://www.android.com/)
 [![Version](https://img.shields.io/badge/Version-3.5.1.0044-blue?style=for-the-badge)](https://github.com/smartworldarafath/Blackmagic_Camera/releases)
